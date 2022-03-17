@@ -9,6 +9,10 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mkdocstrings-py
 
 Summary: A legacy Python handler for mkdocstrings.
 
+Development: https://github.com/mkdocstrings/python-legacy
+
+Documentation: https://mkdocstrings.github.io/python-legacy
+
 Current build status
 ====================
 
