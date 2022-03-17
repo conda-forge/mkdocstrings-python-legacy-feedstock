@@ -26,19 +26,25 @@ requirements:
 
 test:
   commands:
-    - pytest tests.py
     - pip check
+    - pytest
   requires:
     - pip
-    - pytest
+    - pytest >=6.2
+    - pytest-xdist >=2.4
+    - pytest-randomly>=3.10
   files:
     - tests.py
+  source_files:
+    - tests
 
 about:
   home: https://pypi.org/project/mkdocstrings-python-legacy/
   summary: A legacy Python handler for mkdocstrings.
   license: MIT
   license_file: LICENSE
+  doc_url: https://mkdocstrings.github.io/python-legacy
+  dev_url: https://github.com/mkdocstrings/python-legacy
 
 extra:
   recipe-maintainers:
