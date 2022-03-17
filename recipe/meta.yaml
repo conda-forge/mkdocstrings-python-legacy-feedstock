@@ -1,5 +1,5 @@
 {% set name = "mkdocstrings-python-legacy" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mkdocstrings-python-legacy-{{ version }}.tar.gz
-  sha256: d8b032e1d1b4c75a601fcc5837249e2b2dc2cb21c9ad32a313ffaa54d5838242
+  sha256: f0e7ec6a19750581b752acb38f6b32fcd1efe006f14f6703125d2c2c9a5c6f02
 
 build:
   noarch: python
