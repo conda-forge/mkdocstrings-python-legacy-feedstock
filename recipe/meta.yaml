@@ -1,5 +1,5 @@
 {% set name = "mkdocstrings-python-legacy" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mkdocstrings-python-legacy-{{ version }}.tar.gz
-  sha256: f0e7ec6a19750581b752acb38f6b32fcd1efe006f14f6703125d2c2c9a5c6f02
+  sha256: 3fb58fdabe19c6b52b8bb1d3bb1540b1cd527b562865468d6754e8cd1201050c
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
     - python >=3.7
     - pdm
   run:
-    - mkdocstrings >=0.18
+    - mkdocstrings >=0.19
     - python >=3.7
     - pytkdocs >=0.14
 
