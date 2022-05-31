@@ -25,14 +25,12 @@ requirements:
     - pytkdocs >=0.14
 
 test:
+  imports:
+    - mkdocstrings_handlers.python
   commands:
     - pip check
-    - pytest tests.py
   requires:
     - pip
-    - pytest
-  files:
-    - tests.py
 
 about:
   home: https://pypi.org/project/mkdocstrings-python-legacy/
