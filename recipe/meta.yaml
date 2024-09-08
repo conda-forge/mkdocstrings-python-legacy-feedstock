@@ -1,28 +1,29 @@
 {% set name = "mkdocstrings-python-legacy" %}
-{% set version = "0.2.3" %}
+{% set version = "0.2.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mkdocstrings-python-legacy-{{ version }}.tar.gz
-  sha256: 3fb58fdabe19c6b52b8bb1d3bb1540b1cd527b562865468d6754e8cd1201050c
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 36d160ac7af5a3cec764eeb66522f42a116088a41289e04372592b91e14abbbc
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
     - pip
-    - python >=3.7
-    - pdm
+    - python >=3.8
+    - pdm-backend
   run:
     - mkdocstrings >=0.19
-    - python >=3.7
+    - python >=3.8
     - pytkdocs >=0.14
+    - mkdocs-autorefs >=1.1
 
 test:
   imports:
@@ -35,7 +36,7 @@ test:
 about:
   home: https://pypi.org/project/mkdocstrings-python-legacy/
   summary: A legacy Python handler for mkdocstrings.
-  license: MIT
+  license: ISC
   license_file: LICENSE
   doc_url: https://mkdocstrings.github.io/python-legacy
   dev_url: https://github.com/mkdocstrings/python-legacy
