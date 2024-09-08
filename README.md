@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mkdocstrings-py
 
 Home: https://pypi.org/project/mkdocstrings-python-legacy/
 
-Package license: MIT
+Package license: ISC
 
 Summary: A legacy Python handler for mkdocstrings.
 
