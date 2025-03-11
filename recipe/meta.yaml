@@ -27,7 +27,7 @@ requirements:
 
 test:
   imports:
-    - mkdocstrings_handlers.python
+    - mkdocstrings_handlers.python.get_handler
   commands:
     - pip check
   requires:
