@@ -26,10 +26,11 @@ requirements:
     - mkdocs-autorefs >=1.1
 
 test:
-  imports:
-    - mkdocstrings_handlers.python.get_handler
   commands:
     - pip check
+    - python test-imports.py
+  files:
+    - test-imports.py
   requires:
     - pip
     - python {{ python_min }}
