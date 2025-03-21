@@ -1,0 +1,1 @@
+from mkdocstrings_handlers.python import get_handler
